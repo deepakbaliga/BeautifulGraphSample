@@ -1,7 +1,7 @@
 # BeautifulGraphSample
 This library is inspired from [Zane David](https://dribbble.com/zane_david)'s Animation Transition Work on Dribbble.
 
-# ![pageres](images/screenshot.png)
+# ![pageres](images/screenshot.png){:height="100px"}.
 
 
 
