@@ -3,7 +3,32 @@ This library is inspired from [Zane David](https://dribbble.com/zane_david)'s An
 
 # ![pageres](images/screenshot.png)
 
+# How Do I use this library?
+Include the <b>beautifulgraph</b> library module inside your build.gradle.
 
+Include this in your layout.xml file
+
+```
+<com.deepakbaliga.beautifulgraph.Plotter
+        android:id="@+id/plotter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+```
+
+And in your java file - 
+
+```java
+
+    private Plotter plotter;
+    private List<Integer> plots =  new ArrayList<>();
+
+    plotter = (Plotter) findViewById(R.id.plotter_view);
+        plotter.setRowCol(10,10);
+        plotter.setPlots(plots);
+  
+```
+
+Do not forget to call the ```.setRowCol()``` and ```.setPlots()``` 
 
 # License  
 
