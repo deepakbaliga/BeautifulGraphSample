@@ -131,6 +131,8 @@ public class Plotter extends View {
 
     private void plotGraph(int width, int height, Canvas canvas){
 
+        gradientPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+
         Shader shader = new LinearGradient(0, 0, 0, 500, getResources().getColor(R.color.colorBlue),  getResources().getColor(R.color.colorGreen), Shader.TileMode.MIRROR /*or REPEAT*/);
         gradientPaint.setShader(shader);
 
@@ -140,6 +142,8 @@ public class Plotter extends View {
             points[j] = inBoundX(i)+correction+cellWidth;
             points[j+1] = inBoundY(i, getWidth());
         }
+
+        gradientPaint.setStyle(Paint.Style.STROKE);
 
         drawLines(canvas);
 
