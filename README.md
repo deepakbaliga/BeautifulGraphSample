@@ -1,7 +1,7 @@
 # BeautifulGraphSample
 This library is inspired from [Zane David](https://dribbble.com/zane_david)'s Animation Transition Work on Dribbble.
 
-# ![pageres](images/screenshot.png)
+<img src="images/screenshot.png" width="320"/>
 
 # How Do I use this library?
 Include the <b>beautifulgraph</b> library module inside your build.gradle.
